@@ -15,4 +15,4 @@ Chrome
 Opera
 Safari
 
-To see screen captures go to my behance : 
+To see screen captures go to my behance : http://bit.ly/1lzkZGb
