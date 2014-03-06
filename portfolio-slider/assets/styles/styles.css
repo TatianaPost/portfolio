@@ -6,6 +6,7 @@
 /* for the slider */
 body {
   color: #ffffff !important;
+  background: #f5f3dc !important;
 }
 h1 {
   color: #ffffff !important;
@@ -133,8 +134,11 @@ i {
   background-repeat: no-repeat;
   background-position: 50%;
 }
-.hexagon .hexagon-in1 .hexagon-in2:hover {
-  background: red;
+.hexagon .hexagon-in1 .hexagon-in2 img {
+  opacity: 0.5;
+}
+.hexagon .hexagon-in1 .hexagon-in2 img:hover {
+  opacity: 1.0;
 }
 .threeHexa {
   margin-top: -75px !important;

@@ -132,6 +132,12 @@ i {
   background-repeat: no-repeat;
   background-position: 50%;
 }
+.hexagon .hexagon-in1 .hexagon-in2 img {
+  opacity: 0.5;
+}
+.hexagon .hexagon-in1 .hexagon-in2 img:hover {
+  opacity: 1.0;
+}
 .threeHexa {
   margin-top: -75px !important;
 }
