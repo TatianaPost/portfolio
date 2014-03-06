@@ -1,0 +1,262 @@
+
+/* LESS Document */
+
+/* to modify background element */
+@background_menu: #323232;
+@background: #F5F3DC;
+@background_folio: none;
+@background_description: #009393;
+@background_contact: #323232;
+@background_forms: #454545;
+@background_footer: #424242;
+
+
+/* to modify text color */
+@fontcolor: #ffffff;
+@fonthover: #2eb398;
+@fontcolorContact: #ffffff;
+@h1Color: #ffffff;
+@h2Color: #00585F;
+@h4Color: #ffffff;
+@footerColor: #323232;
+
+/* to modify logo size */
+@logoWidth: 75px;
+@logoHeight: 82px;
+
+/* for the slider */
+@arrowColor: #808080;
+
+body {
+    color: @fontcolor !important;
+}
+
+.contains {
+}
+
+h1 {
+    color: @h1Color !important;
+}
+
+h2 {
+    color: @h2Color !important;
+}
+
+h4 {
+    color: @h4Color !important;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.section {
+    overflow: hidden;
+}
+
+.nav {
+    background: @background_menu;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+
+    ul {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 0px;
+
+        li {
+            display: inline-block;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 10px;
+            vertical-align: middle;
+
+            a {
+                text-decoration: none;
+                color: @fontcolor;
+                padding: 5px;
+
+                &:hover {
+                    color: @fonthover;
+                }
+            }
+        }
+    }
+}
+
+#navLogo {
+    margin: 10px 30px 10px 30px;
+    width: @logoWidth;
+    height: @logoHeight;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.info {
+    background: @background_description;
+    padding: 70px 0px;
+
+    .social-icons {
+        margin-top: 70px;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 0px;
+            margin-top: 25px;
+
+            li {
+                display: inline-block;
+                font-size: 12px;
+                margin-right: 25px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.folio {
+    background: @background_folio;
+
+    ul {
+        display: inline-block;
+        font-size: 0;
+
+        li {
+            font-size: 12px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}
+
+.hexagon {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    visibility: hidden;
+    transform: rotate(120deg);
+    -ms-transform: rotate(120deg); /* IE 9 */
+    -webkit-transform: rotate(120deg); /* Safari and Chrome */
+    cursor: pointer;
+
+    .hexagon-in1 {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg); /* IE 9 */
+        -webkit-transform: rotate(-60deg); /* Safari and Chrome */
+        .hexagon-in2 {
+            width: 100%;
+            height: 100%;
+            visibility: visible;
+            transform: rotate(-60deg);
+            -ms-transform: rotate(-60deg); /* IE 9 */
+            -webkit-transform: rotate(-60deg); /* Safari and Chrome */
+            background: grey;
+            background-repeat: no-repeat;
+            background-position: 50%;
+
+            &:hover {
+                background:red;
+            }
+        }
+    }
+}
+
+.threeHexa {
+    margin-top: -75px !important;
+}
+
+.fourHexa {
+    margin-top: -75px !important;
+}
+
+.first {
+    margin-top: 0px !important;
+}
+
+.contact {
+    background: @background_contact;
+    color: @fontcolorContact;
+    padding: 70px 0px;
+
+    #message {
+        height: 300px;
+    }
+
+    button {
+        background: @background_description;
+    }
+
+    .forms {
+        background: @background_forms;
+        color: white;
+
+        &:focus {
+            background: @background_forms;
+            color: white;
+        }
+    }
+}
+
+/*For the slider*/
+
+.orbit-container .orbit-next > span {
+    border-left-color: #808080 !important;
+}
+
+.orbit-container .orbit-next:hover > span {
+    border-left-color: #ffffff !important;
+}
+
+.orbit-container .orbit-prev > span {
+    border-right-color: #808080 !important;
+}
+
+.orbit-container .orbit-prev:hover > span {
+    border-right-color: #ffffff !important;
+}
+
+.orbit-timer {
+    display:none;
+}
+
+/*For the responsive navigation*/
+
+.slicknav_menu {
+    display: none;
+}
+
+#footer {
+    background: @background_footer;
+    padding: 40px 0px;
+}
+
+@media screen and (max-width: 40em) {
+    #menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .threeHexa {
+        margin-top: 0px !important;
+    }
+
+    .fourHexa {
+        margin-top: 0px !important;
+    }
+}
