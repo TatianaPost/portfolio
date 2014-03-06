@@ -135,7 +135,7 @@ i {
   background-position: 50%;
 }
 .hexagon .hexagon-in1 .hexagon-in2 img {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .hexagon .hexagon-in1 .hexagon-in2 img:hover {
   opacity: 1.0;
