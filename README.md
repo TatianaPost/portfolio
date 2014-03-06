@@ -1,6 +1,8 @@
 Free portfolio template
 =========
 
+V2 with slider :)
+
 This is a free responsive portfolio template. 
 
 This template is power with Foundation 5 and Lesscss. But you have also the css files in the folder.
