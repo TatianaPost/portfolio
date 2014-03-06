@@ -14,28 +14,13 @@ var widthParam = 1920 ;
 
 //For define the width and the height of the section
 $(window).resize(function () {
-    var width = $(window).width();
-    var height = $(window).height();
     var menuWidth = $(".nav").height();
     $(".section").css("padding-top", menuWidth + 20 + 'px');
-    $(".section").css("width", width);
-    if (width != widthParam) {
-        $(".section").css("height", 100 + '%');
-    } else {
-        $(".section").css("height", height);
-    }
 });
 
-var width = $(window).width();
-var height = $(window).height();
 var menuWidth = $(".nav").height();
 $(".section").css("padding-top", menuWidth + 25 + 'px');
-$(".section").css("width", width);
-if (width != widthParam) {
-    $(".section").css("height", 100 + '%');
-} else {
-    $(".section").css("height", height);
-}
+
 
 
 //For responsive menu
